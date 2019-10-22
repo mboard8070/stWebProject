@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<style>
+    @media (min-width: 1200px) {
+        .container-fluid{
+         max-width: 1500px;
+     }
+    .jumbotron{
+        border-color: #007bff;
+        border-style: solid;
+    }
+    .jumbotron-ks{
+         background-image: url({% static "images/ks/screens/ksBanner.png" %});
+         -webkit-text-fill-color: #cad1db;
+    }
+    .jumbotron-sftc{
+        background-image: url({% static "images/sftc/Megafloods/Screens/mammgame.png" %});
+         -webkit-text-fill-color: #cad1db;
+    }
+
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <title>sleekTiki Games</title>
+</head>
+<body>
+<div class="container-fluid">
+   <div class="jumbotron jumbotron-ks">
+       <h1 class="display-4"><span style="background-color: #ab078a"><span>Kamodo Steve: Janitor on Fire!</span></h1>
+            <div class="bg primary">
+                <span class="lead"><span style="background-color: #ab078a"> Battle the Robber Barons for blights on the environment while you test Steve's cardio, fear of heights, aim and tolerance for pain!</></p>
+            </div>
+        <hr class="my-4">
+            <p><span style="background-color: #ab078a">Expansive levels, druidic abilities and weapons await...</span></p>
+     <a class="btn btn-primary btn-lg" href="{% url 'ksjof' %}" role="button">Learn more</a>
+    </div>
+    <br>
+    <div class="jumbotron jumbotron-sftc">
+        <h1 class="display-4"><span style="background-color: #ab078a">Stories from the Cores</span></h1>
+        <p class="lead"><span style="background-color: #ab078a">A suite of short, interactive educational experiences designed and developed for museum exhibits.</span></p>
+    <hr class="my-4">
+        <p><span style="background-color: #ab078a">Learn about the Megafloods, the Dark Matter Biosphere and what caused the dinosaurs to be extinct through science.</span></p>
+    <a class="btn btn-primary btn-lg" href="{% url 'sftc' %}" role="button">Learn more</a>
+    </div>
+</div>
+
+</body>
+</html>
+{% endblock %}
