@@ -18,8 +18,12 @@
         width: 1em;
     }
 </style>
+
 <header>
-    <link rel="icon" href="{% static 'images/stfav.png' %}">
+    {% block head %}
+      {% endblock %}
+
+
     <!-- basic navbar-->
   <nav class="navbar navbar-dark bg-dark">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,6 +57,7 @@
                  </div>
 </div>
 </nav>
+
 </header>
 <br>
 
