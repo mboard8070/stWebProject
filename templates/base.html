@@ -25,37 +25,32 @@
 
 
     <!-- basic navbar-->
-  <nav class="navbar navbar-dark bg-dark">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-<div class=" navbar fixed-top navbar-expand-sm navbar-dark bg-dark">
+<nav class=" navbar fixed-top navbar-expand-sm navbar-dark bg-dark">
   <a class="navbar-brand" href="{% url 'home' %}">sleekTiki</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
 
-    <ul class="navbar-nav mr-auto">
+            <div class = "select2-container">
 
-    <div class = "select2-container">
+                <a class="btn btn-outline-primary btn-md" href="{% url 'home' %}" role="button">Home</a>
 
-                <a class="btn btn-outline-primary btn-sm" href="{% url 'home' %}" role="button">Home</a>
+                <a class="btn btn-outline-primary btn-md" href="{% url 'about' %}" role="button">About</a>
 
-                <a class="btn btn-outline-primary btn-sm" href="{% url 'about' %}" role="button">About</a>
+                <a class="btn btn-outline-primary btn-md" href="{% url 'games' %}" role="button">Games</a>
 
-                <a class="btn btn-outline-primary btn-sm" href="{% url 'games' %}" role="button">Games</a>
+                <a class="btn btn-outline-primary btn-md" href="{% url 'contact' %}" role="button">Contact</a>
 
-                <a class="btn btn-outline-primary btn-sm" href="{% url 'contact' %}" role="button">Contact</a>
+                 <a class="btn btn-outline-primary btn-md" href="https://www.artstation.com/matthewboard" target="_blank" role="button">Artstation</a>
 
-                 <a class="btn btn-outline-primary btn-sm" href="https://www.artstation.com/matthewboard" target="_blank" role="button">Artstation</a>
-
-    </div>
-    </ul>
+            </div>
+        </ul>
                 <div>
-                <a href="https://twitter.com/matthew_board?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @matthew_board</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
                  </div>
-</div>
+        </div>
 </nav>
 
 </header>

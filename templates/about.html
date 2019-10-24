@@ -5,19 +5,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <style>
-body{
+  @media (min-width: 1200px) {
+        .container-fluid {
+            max-width: 1500px;
+        }
+     }
+    body{
+     background: url({% static 'images/bg/bg02.png' %});
+         height: 1080px;
+         background-attachment: fixed;
+         background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     -webkit-text-fill-color: #cad1db
-}
+    }
+    .jumbotron{
+        background-color: #1b1e24 !important;
+         border-color: #007bff;
+        border-style: solid;
+    }
+
 </style>
 <head>
     <meta charset="UTF-8">
     <title>About SleekTiki.com</title>
 </head>
+<body>
 <br>
 <br></br>
-<div class= "container">
+<div class= "container-fluid px-lg-5">
+
     <div class="row mx-md-n5">
         <div class="col-sm">
+            <div class="jumbotron">
             <p>SleekTiki Interactive is a content creation and game/interactive development studio located in Cincinnati, Ohio. We provide the following services:</p>
             <ul class="list-group">
             <li>Art Direction</li>
@@ -27,21 +47,19 @@ body{
             <li>Game Development</li>
             <li>AR/VR/Mobile</li>
             </ul>
-
+            </div>
         </div>
-        <div class="col-6">
+        <div class="col-sm">
+            <div class="jumbotron">
             <div class="aligned"><img src="{% static "images/aboutpic.jpg" %}" class="rounded"></div>
             <br>
             <p>
                 Matthew Board is a technical artist, digital sculptor, Independent game developer and founder of sleekTiki Interactive. His digital sculptures have been exhibited at the Gnomon School of Visual Effects, Games and Animation and the Pixologic (makers of ZBrush) turntable gallery. Recently, Matthew completed the educational game, Mysteries of the Core, which was funded by a grant from the National Science Foundation. He has done contract work and consulting for various clients including Great Eastern Technology, Vermont Digital Arts, Owlchemy Labs, Anzovin Studio, and Hasbro. His current research explores meaningful environmental narratives using game development as the vehicle for expression. Before arriving at Miami University, Matthew taught at Casper College in Casper, Wyoming, Springfield College in Springfield, Massachusetts and Columbia College Chicago in Chicago, Illinois.  He has an MFA in electronic art from the University of Cincinnati and a BFA in studio art from Northern Kentucky University.
             </p>
+                <br>
+<a href="https://twitter.com/matthew_board?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @matthew_board</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>            </div>
         </div>
-        <div class="col-sm" id="right">
-           <a class="twitter-timeline" href="https://twitter.com/matthew_board?ref_src=twsrc%5Etfw">Tweets by matthew_board</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-        </div>
-
-    </div>
-
+</div>
 </div>
 </body>
 </html>
