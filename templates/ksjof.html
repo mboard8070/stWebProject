@@ -4,6 +4,8 @@
 {% block content %}
 <!DOCTYPE html>
 <style>
+
+
     @media (min-width: 1200px) {
         .container-fluid{
          max-width: 1500px;
@@ -111,31 +113,31 @@
     <title>Kamodo Steve: Janitor on Fire!</title>
 </head>
 <body>
+<div>
 
-< div class = "container-fluid">
 
+    <div class="container-fluid">
     <img src="{% static "images/ks/assets/KSlogoRectangle.png" %}" class="img-fluid" alt="responsive image">
+    </div>
 
     <div class="row bg-dark">
 
-     <div class="col-sm"align="center">
+     <div class="col"align="center">
                 <a class="btn btn-outline-warning btn-sm" href="{% url 'about' %}" role="button">Steam</a>
         </div>
-     <div class=" col-sm" align="center">
+     <div class=" col" align="center">
                 <a class="btn btn-outline-warning btn-sm" href="https://www.facebook.com/KamodoSteve76" target="blank" role="button">Facebook</a>
         </div>
-     <div class=" col-sm" align="center">
+     <div class=" col" align="center">
                 <a class="btn btn-outline-warning btn-sm" href="https://twitter.com/KamodoSteve" target="_blank" role="button">Twitter</a>
          </div>
-      <div class=" col-sm" align="center">
+      <div class=" col" align="center">
                  <a class="btn btn-outline-warning btn-sm" href=https://www.indiedb.com/games/kamodo-steve-janitor-on-fire target="_blank" role="button">IndieDB</a>
         </div>
-      <div class=" col-sm" align="center">
-                <a class="btn btn-outline-warning btn-sm" href="https://www.indiedb.com/games/kamodo-steve-janitor-on-fire/presskit#factsheet" target="_blank" role="button">Presskit</a>
-      </div>
     </div>
-    <br><br>
 
+    <br><br>
+<div class = "container-fluid">
      <div class="jumbotron">
 
                 <p></p><span class="lead"><span style="background-color: #ab078a">Kamodo Steve is an 2.5D action sidescroller where you play as Steve, an unwilling hero with unrealized power.</span></p>
@@ -231,7 +233,7 @@
    </div>
 
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
             <div class="modal-content">
                 <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -333,7 +335,15 @@
             </div>
         </div>
     </div>
+    <br>
+    <br>
 </div>
+    <div class="row bg-dark">
+        <div class=" col" align="center">
+            <a class="btn btn-outline-warning btn-sm" href="https://www.indiedb.com/games/kamodo-steve-janitor-on-fire/presskit#factsheet" target="_blank" role="button">Presskit</a>
+        </div>
+    </div>
+
 </body>
 </html>
 {% endblock %}
