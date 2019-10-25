@@ -6,8 +6,18 @@
 {% block content %}
     <html lang="en">
     <style>
+    html{
+
+    }
     body{
-        -webkit-text-fill-color: #cad1db !important;
+        background: url({% static 'images/bg/bg07dk.png' %});
+         height: 1080px;
+         background-attachment: fixed;
+         background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        -webkit-text-fill-color: #cad1db
+
     }
 
         @media (min-width: 1200px) {
@@ -65,7 +75,11 @@
     <br>
     <body>
 
+      <body>
+
     <div class="container-fluid">
+        <br>
+        <br>
         <p>
         <div style="text-align: center;"><span style="background-color: #ab078a">Welcome to SleekTiki.com, an independent content creation and game development studio located in Cincinnati, Ohio.</span>
         </div>
@@ -83,6 +97,7 @@
             </p>
             <a class="btn btn-primary btn-lg" href="{% url 'ksjof' %}" role="button">Learn more</a>
         </div>
+
         <br>
         <br>
         <p>

@@ -5,7 +5,14 @@
 <!DOCTYPE html>
 <style>
 
-
+    body{
+        background: url({% static 'images/bg/bg01dk.png' %});
+         height: 1080px;
+         background-attachment: fixed;
+         background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
     @media (min-width: 1200px) {
         .container-fluid{
          max-width: 1500px;
@@ -52,7 +59,7 @@
 
 }
 .image-block {
-    border: 3px solid white ;
+    border: 0px solid white ;
     background-color: black;
     padding: 0px;
     margin: 0px;
@@ -60,18 +67,24 @@
     text-align: center;
     vertical-align: bottom;
 }
-.image-block > p {
+.image-block {
     width: 100%;
     height: 100%;
-    font-weight: normal;
-    font-size: 19px;
     padding-top: 150px;
     background-color: rgba(3,3,3,0.0);
     color: rgba(6,6,6,0.0);
+    transition: transform .5s;
+     border-radius: 15px;
+    border-radius: 15px;
+    margin-top: 10px;
+
+
 }
-.image-block:hover > p {
-    background-color: rgba(3,3,3,0.5);
-    color: white;
+.image-block:hover {
+    background-color: rgba(3,256,3,0.5);
+    transition: transform .2s;
+    transform: scale(1.1);
+    border-radius: 15px;
 }
 .carousel{
         border-style: solid;
@@ -114,8 +127,8 @@
 </head>
 <body>
 <div>
-
-
+    <br>
+    <br>
     <div class="container-fluid">
     <img src="{% static "images/ks/assets/KSlogoRectangle.png" %}" class="img-fluid" alt="responsive image">
     </div>
@@ -157,77 +170,77 @@
     <div class="row" id="gallery" data-toggle="modal" data-target="#exampleModal">
 
 
-        <div class="image-block col-sm-4" style="background: url({% static "images/ks/screens/s01start.png" %})no-repeat center top;background-size:cover;" data-target="#carouselExample" data-slide-to="0">
+        <div class="image-block col-sm-4 " style="background: url({% static "images/ks/screens/s01start.png" %})no-repeat center top;background-size:cover;" data-target="#carouselExample" data-slide-to="0">
+             <p> KSJOF! </p>
         </div>
-
         <div class="image-block col-sm-4" style="background: url({% static "images/ks/screens/s01pclose.png" %})no-repeat center top;background-size:cover;" data-target="#carouselExample" data-slide-to="1">
-            <p> Image Info </p>
+            <p> KSJOF! </p>
         </div>
         <div class="image-block col-sm-4" style="background: url({% static "images/ks/screens/s03saws.png" %}) no-repeat center top;background-size:cover;" data-target= "#carouselExample" data-slide-to="2">
-            <p> Image Info </p>
+            <p> KSJOF! </p>
         </div>
         <div class="image-block col-sm-4" style="background: url({% static "images/ks/screens/s01close.png" %}) no-repeat center top;background-size:cover;" data-target= "#carouselExample" data-slide-to="3">
-            <p> Image Info </p>
+            <p> KSJOF! </p>
         </div>
         <div class="image-block col-sm-8" style="background: url({% static "images/ks/screens/s01aim.png" %}) no-repeat center top;background-size:cover;" data-target= "#carouselExample" data-slide-to="4">
-            <p> Image Info </p>
+            <p> KSJOF! </p>
         </div>
         <div class="image-block col-sm-8" style="background: url({% static "images/ks/screens/s01aimer.png" %}) no-repeat center top;background-size:cover;" data-target= "#carouselExample" data-slide-to="5">
-            <p> Image Info </p>
+            <p> KSJOF! </p>
         </div>
         <div class="image-block col-sm-4" style="background: url({% static "images/ks/screens/s01bear.png" %}) no-repeat center top;background-size:cover;" data-target= "#carouselExample" data-slide-to="6">
-            <p> Image Info </p>
+            <p> KSJOF! </p>
         </div>
         <div class="image-block col-sm-4" style="background: url({% static "images/ks/screens/s01boss.png" %}) no-repeat center top;background-size:cover;" data-target= "#carouselExample" data-slide-to="7">
-            <p> Image Info </p>
+            <p> KSJOF! </p>
         </div>
         <div class="image-block col-sm-8" style="background: url({% static "images/ks/screens/s01fire.png" %}) no-repeat center top;background-size:cover;" data-target= "#carouselExample" data-slide-to="8">
-            <p> Image Info </p>
+            <p> KSJOF! </p>
         </div>
         <div class="image-block col-sm-4" style="background: url({% static "images/ks/screens/s01pain.png" %}) no-repeat center top;background-size:cover;" data-target= "#carouselExample" data-slide-to="9">
-            <p> Image Info </p>
+            <p> KSJOF! </p>
         </div>
         <div class="image-block col-sm-4" style="background: url({% static "images/ks/screens/s01panel.png" %}) no-repeat center top;background-size:cover;" data-target= "#carouselExample" data-slide-to="10">
-            <p> Image Info </p>
+            <p> KSJOF! </p>
         </div>
         <div class="image-block col-sm-4" style="background: url({% static "images/ks/screens/s01tags.png" %}) no-repeat center top;background-size:cover;" data-target= "#carouselExample" data-slide-to="11">
-            <p> Image Info </p>
+            <p> KSJOF! </p>
         </div>
         <div class="image-block col-sm-4" style="background: url({% static "images/ks/screens/s02blue.png" %}) no-repeat center top;background-size:cover;" data-target= "#carouselExample" data-slide-to="12">
-            <p> Image Info </p>
+            <p> KSJOF! </p>
         </div>
         <div class="image-block col-sm-4" style="background: url({% static "images/ks/screens/s02hide.png" %}) no-repeat center top;background-size:cover;" data-target= "#carouselExample" data-slide-to="13">
-            <p> Image Info </p>
+            <p> KSJOF! </p>
         </div>
         <div class="image-block col-sm-4" style="background: url({% static "images/ks/screens/s02jump.png" %}) no-repeat center top;background-size:cover;" data-target= "#carouselExample" data-slide-to="14">
-            <p> Image Info </p>
+            <p> KSJOF! </p>
         </div>
         <div class="image-block col-sm-8" style="background: url({% static "images/ks/screens/s02mount.jpg" %}) no-repeat center top;background-size:cover;" data-target= "#carouselExample" data-slide-to="15">
-            <p> Image Info </p>
+            <p> KSJOF! </p>
         </div>
          <div class="image-block col-sm-4" style="background: url({% static "images/ks/screens/s02tiki.png" %}) no-repeat center top;background-size:cover;" data-target= "#carouselExample" data-slide-to="16">
-            <p> Image Info </p>
+            <p> KSJOF! </p>
         </div>
          <div class="image-block col-sm-4" style="background: url({% static "images/ks/screens/s02shop.png." %}) no-repeat center top;background-size:cover;" data-target= "#carouselExample" data-slide-to="17">
-            <p> Image Info </p>
+            <p> KSJOF! </p>
         </div>
          <div class="image-block col-sm-4" style="background: url({% static "images/ks/screens/s02pipe.png" %}) no-repeat center top;background-size:cover;" data-target= "#carouselExample" data-slide-to="18">
-            <p> Image Info </p>
+            <p> KSJOF! </p>
         </div>
          <div class="image-block col-sm-4" style="background: url({% static "images/ks/screens/s03distance.png" %}) no-repeat center top;background-size:cover;" data-target= "#carouselExample" data-slide-to="19">
-            <p> Image Info </p>
+            <p> KSJOF! </p>
         </div>
          <div class="image-block col-sm-4" style="background: url({% static "images/ks/screens/s03drone.png" %}) no-repeat center top;background-size:cover;" data-target= "#carouselExample" data-slide-to="20">
-            <p> Image Info </p>
+            <p> KSJOF! </p>
          </div>
          <div class="image-block col-sm-8" style="background: url({% static "images/ks/screens/s03lift.png" %}) no-repeat center top;background-size:cover;" data-target= "#carouselExample" data-slide-to="21">
-            <p> Image Info </p>
+            <p> KSJOF! </p>
         </div>
          <div class="image-block col-sm-8" style="background: url({% static "images/ks/screens/s03river.png" %}) no-repeat center top;background-size:cover;" data-target= "#carouselExample" data-slide-to="22">
-            <p> Image Info </p>
+            <p> KSJOF! </p>
         </div>
          <div class="image-block col-sm-4" style="background: url({% static "images/ks/screens/scrn03boss.png" %}) no-repeat center top;background-size:cover;" data-target= "#carouselExample" data-slide-to="23">
-            <p> Image Info </p>
+            <p> KSJOF! </p>
         </div>
     </div>
    </div>

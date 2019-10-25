@@ -8,6 +8,15 @@
         .container-fluid{
          max-width: 1500px;
      }
+     body{
+          -webkit-text-fill-color: #cad1db;
+         background: url({% static 'images/bg/bgsftcdk.png' %});
+         height: 1080px;
+         background-attachment: fixed;
+         background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+     }
     .jumbotron{
         border-color: #007bff;
         border-style: solid;
@@ -63,6 +72,14 @@
        }
     }
 
+    .row{
+        padding:10px;
+        border-style: solid;
+         border-color: #007bff;
+        border-radius: 10px;
+        background: #1b1e24;
+    }
+
 </style>
 
 <html lang="en">
@@ -72,16 +89,26 @@
 </head>
 <body>
 <div class = "container-fluid">
+    <br>
+    <br>
     <div class="jumbotron">
             <h1 class="display-4"><span style="background-color: #ab078a"><span>Stories from the Cores</span></h1>
             <div class="bg primary">
                 <p><span class="lead"><span style="background-color: #ab078a"> A suite of short, interactive educational experiences designed and developed for museum exhibits.</span></span></p>
             </div>
         <hr class="my-4">
-            <p><span style="background-color: #ab078a">Learn about the Megafloods, the Dark Matter Biosphere and what caused the dinosaurs to be extinct through science.</span></p>
+            <p><span style="background-color: #ab078a">Learn about the Megafloods, the Dark Matter Biosphere and what caused the extinction of the dinosaurs through science.</span></p>
 
         </div>
 
+    <p><div style="text-align: center;"><span style="background-color: #ab078a">I created Stories from the Cores for my clients at Ceisel and Associates. It is a suite of three mini-games that were developed in a year using Unreal Engine. Some assets were purchased, but I created all the hero content myself. For a more complete breakdown and a chance to take a look at individual assets, visit my  <a href="http://www.yahoo.com" target="_blank">Artstation</a>. The games are touch screen compatible and are localized to Spanish. Along with the exhibited version, I created optimized versions that can be played on lower computers. The game is playable on PC and MAC.</span></div></p>
+
+    <div class="row bg-dark">
+         <div class="col"align="center">
+             <a class="btn btn-outline-warning btn-sm" href="https://joidesresolution.org/download-stories-from-the-core/" target="blank" role="button">Download</a>
+             </div>
+    </div>
+    <br>
     <p><div style="text-align: center;"><span style="background-color: #ab078a">Game Trailer</span></div></p>
     <div class="video-trailer-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/lwt_ndeOZs4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
     <br>

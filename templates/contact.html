@@ -5,45 +5,72 @@
 
     <style>
       @media (min-width: 1200px) {
-            .container {
+            .container-fluid {
                 max-width: 1500px;
             }
         }
 
     body {
-        -webkit-text-fill-color: #007bff !important;
+        -webkit-text-fill-color: #cad1db;
+         background: url({% static 'images/bg/bg05dk.png' %});
+         height: 1080px;
+         background-attachment: fixed;
+         background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+      .jumbotron{
+        border-color: #007bff;
+        border-style: solid;
+         background-image: url({% static "images/bg/bg05.png" %});
+          background-position-y: center;
+         -webkit-text-fill-color: #cad1db;
     }
     </style>
 
     <body>
-    <div class="container">
+    <br>
+    <br>
+    <br>
+<div class="container-fluid">
         <div class="jumbotron jumbotron-sm">
             <div class="row">
                 <div class="col-sm-12 col-lg-12">
-                    <h1 class="h1">
-                    Contact us <small>Please let us know if we can help!</small></h1>
+                    <h1 class="h1"><span style="background-color: #ab078a">Contact Us!</></h1>
+                     <span class="lead"><p><span style="background-color: #ab078a"> Please let us know how we can help with your next project!</p></small>
                 </div>
             </div>
         </div>
-
-    <form id="contactform" action="https://formspree.io/mpzadpvv" method="POST">
-        <div class="col-sm-7 slideanim">
-            <div class="row">
-                <div class="col-sm-6 form-group">
-                     <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
-                </div>
-                    <div class="col-sm-6 form-group">
-                         <input class="form-control" id="email" name="_replyto" placeholder="Email" type="email" required>
-                    </div>
-            </div>
-                    <textarea class="form-control" id="comments" name="message" placeholder="Message" rows="5"></textarea><br>
-                         <div class="row">
-                            <div class="col-sm-12 form-group">
-                                 <button class="btn btn-outline-primary btn-md" type="submit">Send</button>
+    <div class="row">
+        <div class="col-sm">
+            <form id="contactform" action="https://formspree.io/mpzadpvv" method="POST">
+                <div class="col ">
+                    <div class="col-sm">
+                        <div class="col form-group" align="center">
+                            <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                        </div>
+                            <div class="col-sm-6 form-group">
+                                <input class="form-control" id="email" name="_replyto" placeholder="Email" type="email" required>
                             </div>
-                          </div>
+                    </div>
+                        <textarea class="form-control" id="comments" name="message" placeholder="Message" rows="5"></textarea><br>
+                            <div class="row">
+                                <div class="col-sm-12 form-group">
+                                    <button class="btn btn-outline-primary btn-md" type="submit">Send</button>
+                                </div>
+                            </div>
+
+            </form>
+        </div>
+        <br>
+        <br>
+        <div class="col-sm">
+            <h1>SleekTiki Interactive LLC</h1>
+            <p>4135 St Martins Pl, Cincinnati, OH, 45211</p>
+            <p>(413) 386-4698</p>
         </div>
     </div>
-    </form>
-</body>
+</div>
 {% endblock %}
+</body>

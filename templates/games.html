@@ -7,6 +7,14 @@
 <html lang="en">
 
 <style>
+    body{
+        background: url({% static 'images/bg/bg07dk.png' %});
+         height: 1080px;
+         background-attachment: fixed;
+         background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
     @media (min-width: 1200px) {
         .container-fluid {
             max-width: 1500px;
@@ -33,6 +41,8 @@
 </head>
 <body>
 <div class="container-fluid">
+    <br>
+    <br>
    <div class="jumbotron jumbotron-ks">
        <h1 class="display-4"><span style="background-color: #ab078a"><span>Kamodo Steve: Janitor on Fire!</span></h1>
             <div class="bg primary">
@@ -47,7 +57,7 @@
         <h1 class="display-4"><span style="background-color: #ab078a">Stories from the Cores</span></h1>
         <p class="lead"><span style="background-color: #ab078a">A suite of short, interactive educational experiences designed and developed for museum exhibits.</span></p>
     <hr class="my-4">
-        <p><span style="background-color: #ab078a">Learn about the Megafloods, the Dark Matter Biosphere and what caused the dinosaurs to be extinct through science.</span></p>
+        <p><span style="background-color: #ab078a">Learn about the Megafloods, the Dark Matter Biosphere and what caused the extinction of the dinosaurs through science.</span></p>
     <a class="btn btn-primary btn-lg" href="{% url 'sftc' %}" role="button">Learn more</a>
     </div>
 </div>
