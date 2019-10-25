@@ -8,11 +8,11 @@
     $email_body = "Name: $name.\n".
                   "Email: $email.\n".
                   "Message: $message.\n";
-     $to ="matt@sleekTiki.com";
+     $to ="mboard76@gmail.com";
      $headers = "From: $email.from \r\n";
      $header .= "Reply-To: $email.from \r\n";
 
      mail($to,$email_subject,$email_body,$headers);
 
-     header("location: home.html");
+     header("location: messagecomplete.html");
 ?>

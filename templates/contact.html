@@ -2,88 +2,48 @@
 {% load static %}
 
 {% block content %}
+
     <style>
+      @media (min-width: 1200px) {
+            .container {
+                max-width: 1500px;
+            }
+        }
+
     body {
         -webkit-text-fill-color: #007bff !important;
     }
     </style>
 
     <body>
-    <div class="jumbotron jumbotron-sm">
     <div class="container">
-        <div class="row">
-            <div class="col-sm-12 col-lg-12">
-                <h1 class="h1">
+        <div class="jumbotron jumbotron-sm">
+            <div class="row">
+                <div class="col-sm-12 col-lg-12">
+                    <h1 class="h1">
                     Contact us <small>Please let us know if we can help!</small></h1>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="container">
-    <div class="row">
-        <div class="col-md-8">
-            <div class="well well-sm">
-                <form class="form" action="contact.php" method="POST" enctype="multipart/form-data" role="form">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label for="name">
-                                Name</label>
-                            <input type="text" class="form-control" name="name" placeholder="Enter name" required="required" action="contact.php" method="POST" enctype="multipart/form-data" />
-                        </div>
-                        <div class="form-group">
-                            <label for="email">
-                                Email Address</label>
-                            <div class="input-group">
-                                <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
-                                </span>
-                                <input type="email" class="form-control" name="email" placeholder="Enter email" required="required" action="contact.php" method="POST" enctype="multipart/form-data" /></div>
-                        </div>
-                        <div class="form-group">
-                            <label for="subject">
-                                Subject</label>
-                            <select id="subject" name="email_subject" class="form-control" required="required" action="contact.php" method="POST" enctype="multipart/form-data">
-                                <option value="na" selected="">Choose One:</option>
-                                <option value="service">General Customer Service</option>
-                                <option value="suggestions">Suggestions</option>
-                                <option value="product">Product Support</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label for="name">
-                                Message</label>
-                            <textarea name="message" id="message" class="form-control" rows="9" cols="25" required="required"
-                                placeholder="Message" action="contact.php" method="POST" enctype="multipart/form-data"></textarea>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <button type="submit" class="btn btn-outline-primary btn-sm pull-right" id="btnContactUs">
-                            Send Message</button>
-                    </div>
                 </div>
-                </form>
             </div>
         </div>
-        <div class="col-md-4">
-            <form>
-            <legend><span class="glyphicon glyphicon-globe"></span> Our office</legend>
-            <address>
-                <strong>sleekTiki Interactive, LLC.</strong><br>
-                4135 St Martins Pl<br>
-                Cincinnati, OH 45211<br>
-                <abbr title="Phone">
-                    P:</abbr>
-                413.386.4698
-            </address>
-            <address>
-                <strong>email:</strong><br>
-                <a href="mailto:#">matt@sleektiki.com</a>
-            </address>
-            </form>
+
+    <form id="contactform" action="https://formspree.io/mpzadpvv" method="POST">
+        <div class="col-sm-7 slideanim">
+            <div class="row">
+                <div class="col-sm-6 form-group">
+                     <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                </div>
+                    <div class="col-sm-6 form-group">
+                         <input class="form-control" id="email" name="_replyto" placeholder="Email" type="email" required>
+                    </div>
+            </div>
+                    <textarea class="form-control" id="comments" name="message" placeholder="Message" rows="5"></textarea><br>
+                         <div class="row">
+                            <div class="col-sm-12 form-group">
+                                 <button class="btn btn-outline-primary btn-md" type="submit">Send</button>
+                            </div>
+                          </div>
         </div>
     </div>
-</div>
-    </body>
+    </form>
+</body>
 {% endblock %}
