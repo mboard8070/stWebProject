@@ -21,7 +21,9 @@
 
 </style>
 <header>
-    <link rel="shortcut icon" href="/static/images/favicon.ico" type="image/png"/>
+    {% block header %}
+    <link rel="shortcut icon" type= "image/png" href={% static 'favicon.ico' %}/>
+    {% endblock %}
 </header>
     <!-- basic navbar-->
 <nav class=" navbar fixed-top navbar-expand-sm navbar-dark bg-dark">
