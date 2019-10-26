@@ -3,6 +3,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <style>
+
     body {
         background-color: #1b1e24; !important;
     }
@@ -21,9 +22,7 @@
 </style>
 
 <header>
-    {% block header %}
-    <link rel="shortcut icon" type= "image/png" href="/static/favicon.ico"/>
-    {% endblock %}
+  <link rel="shortcut icon" type= "image/png" href="/static/favicon.ico"/>
     <!-- basic navbar-->
 <nav class=" navbar fixed-top navbar-expand-sm navbar-dark bg-dark">
   <a class="navbar-brand" href="{% url 'home' %}">sleekTiki</a>
