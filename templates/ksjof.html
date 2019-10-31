@@ -12,6 +12,7 @@
          background-position: center; !important;
         background-repeat: no-repeat; !important;
         background-size: cover; !important;
+        backdrop-filter: brightness(400%);
     }
     @media (min-width: 1200px) {
         .container-fluid{
@@ -19,8 +20,15 @@
      }
     }
 
-    .jumbotron{
+    .jtdescription{
         background-image: url({% static "images/ks/screens/kspgbanner.png" %});
+        border-color: #007bff;
+        border-style: solid;
+        -webkit-text-fill-color: #cad1db;
+    }
+
+    .jtfeatures{
+         background-image: url({% static "images/ks/screens/ksfeatbanner.png" %});
         border-color: #007bff;
         border-style: solid;
         -webkit-text-fill-color: #cad1db;
@@ -151,16 +159,36 @@
 
     <br><br>
 <div class = "container-fluid">
-     <div class="jumbotron">
+     <div class="jumbotron jtdescription">
 
-                <p></p><span class="lead"><span style="background-color: #ab078a">Kamodo Steve is an 2.5D action sidescroller where you play as Steve, an unwilling hero with unrealized power.</span></p>
+         <h3><span style="background-color: #ab078a">Description</span></h3>
+         <br>
+                    <p><span class="lead"><span style="background-color: #ab078a">Kamodo Steve is an 2.5D action sidescroller where you play as Steve, an unwilling hero with unrealized power.</span></p>
                     <p><span class="lead"><span style="background-color: #ab078a">Steve and his BFF Shiloh team up to disrupt the sinister plans of the Robber Barons, a kabal of industrialists</span></p>
-                        <p></p><span class="lead"><span style="background-color: #ab078a">whose only motivations are success, power and greed. They don't care who or what they have to hurt to get it.</span></p>
+                        <p><span class="lead"><span style="background-color: #ab078a">whose only motivations are success, power and greed. They don't care who or what they have to hurt to get it.</span></p>
                              <p><span class="lead"><span style="background-color: #ab078a">Together, Steve and Shiloh use their unconventional skills to restore order to nature and their community.</span></p>
                                  <p><span class="lead"><span style="background-color: #ab078a">...and explostions. There are a ridiculous amount of explosions.</span></p>
 
 
      </div>
+    <br>
+    <br>
+
+    <div class="jumbotron jtfeatures">
+
+        <h3><span style="background-color: #ab078a">Features</span></h3>
+        <br>
+             <ul class="list-group">
+                 <li><span class="lead"><span style="background-color: #ab078a"> Explore large, post-industrial inspired landscapes with a surreal twist.</span></li>
+                     <li><span class="lead"><span style="background-color: #ab078a"> Run and gun, blast, or tactically overcome obstacles and enemies.</span></li>
+                        <li><span class="lead"><span style="background-color: #ab078a"> Expand your arsenal by collecting coins to purchase weapons.</span></li>
+                            <li><span class="lead"><span style="background-color: #ab078a">Discover mutant creatures and save them.</span></li>
+                                    <li><span class="lead"><span style="background-color: #ab078a">Play solo or with a friend in local co-op mode.</span></li>
+                                        <li><span class="lead"><span style="background-color: #ab078a">Experience fast paced action in a side scroller with first person shooter style controls.</span></li>
+             </ul>
+
+     </div>
+ <br> <br>
 <div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/kAY_Dq0bipA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 <br>
     <br>
