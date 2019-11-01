@@ -132,8 +132,26 @@
     cursor: pointer;
 }
 
+ .steam-container {
+            position: relative;
+            padding-bottom: 15%;
+            padding-top: 30px;
+            height: 0;
+            overflow: hidden;
+            border-style: solid;
+            border-color: #007bff;
+            border-radius: 10px;
+        }
 
-
+        .steam-container iframe,
+        .steam-container object,
+        .steam-container embed {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
 
     </style>
 <html lang="en">
@@ -152,7 +170,7 @@
     <div class="row bg-dark">
 
      <div class="col"align="center">
-                <a class="btn btn-outline-warning btn-sm" href="{% url 'about' %}" role="button">Steam</a>
+                <a class="btn btn-outline-warning btn-sm" href="https://store.steampowered.com/app/1181970/Kamodo_Steve_Janitor_on_Fire/" role="button">Steam</a>
         </div>
      <div class=" col" align="center">
                 <a class="btn btn-outline-warning btn-sm" href="https://www.facebook.com/KamodoSteve76" target="blank" role="button">Facebook</a>
@@ -168,18 +186,9 @@
     <br><br>
 
 <div class = "container-fluid">
-     <div class="jumbotron jtsteam" style="background-color: #00adee">
-
-         <h3><div style="text-align: center;">Coming soon to Early Access on Steam!</div></h3>
-         <br>
-         <div class="row slrow">
-             <div class="col-sm" align= "center">
-                  <img src="{% static 'images/ks/assets/steamLogo.png' %}" class="slogo">
-             </div>
-         </div>
-
-
-     </div>
+     <div class="steam-container">
+         <iframe src="https://store.steampowered.com/widget/1181970/" width="646" height="190" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
     <br>
     <br>
      <div class="jumbotron jtdescription">
