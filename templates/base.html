@@ -5,7 +5,8 @@
 <style>
 
     body {
-        background-color: #1b1e24; !important;
+       background-color: #1b1e24; !important;
+        background-color: rgba(0,0,0,1.00); !important;
     }
 
     ul{
@@ -14,7 +15,7 @@
 
     ul li::before{
         content: "\2022";
-        color: #cad1db !important;
+        color: #007bff !important;
         font-weight: normal;
         display: inline-block;
         width: 1em;
@@ -24,7 +25,7 @@
 <header>
   <link rel="shortcut icon" type= "image/png" href="/static/images/stfav.png"/>
     <!-- basic navbar-->
-<nav class=" navbar fixed-top navbar-expand-sm navbar-dark bg-dark">
+<nav class=" navbar fixed-top navbar-expand-sm navbar-dark bg-dark text-primary">
   <a class="navbar-brand" href="{% url 'home' %}">sleekTiki</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -40,9 +41,11 @@
 
                 <a class="btn btn-outline-primary btn-sm" href="{% url 'games' %}" role="button">Games</a>
 
-                <a class="btn btn-outline-primary btn-sm" href="{% url 'contact' %}" role="button">Contact</a>
-
                  <a class="btn btn-outline-primary btn-sm" href="https://www.artstation.com/matthewboard" target="_blank" role="button">Artstation</a>
+
+                <a class="btn btn-outline-primary btn-sm" href="{% url 'edu' %}" role="button">Education</a>
+
+                <a class="btn btn-outline-primary btn-sm" href="{% url 'contact' %}" role="button">Contact</a>
 
             </div>
         </ul>

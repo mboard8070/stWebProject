@@ -1,0 +1,154 @@
+{% extends "base.html" %}
+{% load static %}
+<!DOCTYPE html>
+{% block content %}
+    <html lang="en">
+    <style>
+    body{
+        background-image: url({% static 'images/bg/bg07dk.png' %}); !important;
+         height: 1080px; !important;
+         background-attachment: fixed; !important;
+         background-position: center; !important;
+        background-repeat: no-repeat; !important;
+        background-size: cover; !important;
+        backdrop-filter: brightness(400%);
+         -webkit-text-fill-color: #cad1db
+        }
+
+    .jumbotron {
+            border-color: #007bff;
+            border-style: solid;
+        }
+
+    .jiggleJumbotron{
+         background-image: url({% static "images/edu/jiggleBanner.png" %});
+        -webkit-text-fill-color: #cad1db;
+    }
+
+
+    .studentJumbotron {
+            background-image: url({% static "images/edu/levelDesignBanner.png" %});
+            -webkit-text-fill-color: #cad1db;
+        }
+
+    .bpJumbotron{
+         background-image: url({% static "images/edu/blueprintBanner.PNG" %});
+            -webkit-text-fill-color: #cad1db;
+    }
+
+     @media (min-width: 1200px) {
+         .container-fluid {
+             max-width: 1500px;
+         }
+     }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            padding-top: 30px;
+            height: 0;
+            overflow: hidden;
+            border-style: solid;
+            border-color: #007bff;
+            border-radius: 10px;
+        }
+
+        .video-container iframe,
+        .video-container object,
+        .video-container embed {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+    </style>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game Education</title>
+</head>
+<body>
+
+     <div class="container-fluid">
+        <br>
+        <br>
+        <p>
+        <div style="text-align: center;"><span style="background-color: #ab078a">View some of my educational materials here.</span>
+        </div>
+        </p>
+
+        <div class="jumbotron jiggleJumbotron">
+            <h1 class="display-4"><span style="background-color: #ab078a"><span>Jiggle Physics in Unreal Engine 4</span>
+            </h1>
+            <div class="bg primary">
+                <span class="lead"><span style="background-color: #ab078a"> This playlist of tutorials was based on a student request. The tutorials teach how to create jiggle effects by using the physics editor. We start by modeling a simple object in Maya. We rig the object for physics and then complete the setup in engine. As the end we setup some simple behavior using Blueprint.</></p>
+            </div>
+            <hr class="my-4">
+            <p><span
+                    style="background-color: #ab078a">Click learn more to see the playlist on my YouTube Channel or watch the introduction below.</span>
+            </p>
+            <a class="btn btn-primary btn-lg" href="https://www.youtube.com/playlist?list=PLPd-T2rbByvWh_Er-r6u-lRM-Di-LlQmu" target="_blank" role="button">Learn more</a>
+        </div>
+
+        <div align="center">
+            <div class="video-container">
+                <iframe width="1280" height="720" src="https://www.youtube.com/embed/ltcUXatsg1w?rel=0" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+            </div>
+        </div>
+          <br>
+          <br>
+          <br>
+
+          <div class="jumbotron bpJumbotron">
+            <h1 class="display-4"><span style="background-color: #ab078a"><span>Unreal Engine 4 Blueprint Tutorials</span>
+            </h1>
+            <div class="bg primary">
+                <span class="lead"><span style="background-color: #ab078a">With five years invested into the development of my game, there is plenty of knowledge to be shared. On top of helping my students, Start learning more about UE4's visual scripting language, Blueprint.</></p>
+            </div>
+            <hr class="my-4">
+            <p><span
+                    style="background-color: #ab078a">Click learn more to see the playlist on my YouTube Channel or watch a tutorial below.</span>
+            </p>
+            <a class="btn btn-primary btn-lg" href="https://www.youtube.com/playlist?list=PLPd-T2rbByvWkcuDXO0-WilissHWgmxIb" target="_blank" role="button">Learn more</a>
+        </div>
+
+        <div align="center">
+            <div class="video-container">
+                <iframe width="1280" height="720" src="https://www.youtube.com/embed/qZDfG--ZeLE?rel=0" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+            </div>
+        </div>
+          <br>
+          <br>
+          <br>
+
+          <div class="jumbotron studentJumbotron">
+            <h1 class="display-4"><span style="background-color: #ab078a"><span>Student Work</span>
+            </h1>
+            <div class="bg primary">
+                <span class="lead"><span style="background-color: #ab078a"> Here is a selection of student work. Students used Maya, Zbrush, Substance Painter and Unreal Engine 4 to create these environments in 15 weeks. They used a mixture of created modular assets and content from the Unreal Engine Marketplace.</></p>
+            </div>
+            <hr class="my-4">
+            <p><span
+                    style="background-color: #ab078a">Click learn more to see the full playlist, or watch the sample video below.</span>
+            </p>
+            <a class="btn btn-primary btn-lg" href="https://www.youtube.com/playlist?list=PLPd-T2rbByvU1ipPV3nEjE7w5ESloKr7D" role="button">Learn more</a>
+        </div>
+
+          <div align="center">
+            <div class="video-container">
+                <iframe width="1280" height="720" src="https://www.youtube.com/embed/6AhXb-hMios?rel=0" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+            </div>
+        </div>
+
+     </div>
+</body>
+{% endblock %}
+</html>

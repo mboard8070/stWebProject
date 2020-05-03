@@ -11,6 +11,8 @@ urlpatterns = [
     path('sftc/', views.sftc, name='sftc'),
     path('messagecomplete/', views.messagecomplete, name='messagecomplete'),
     path('contact/', views.contact, name='contact'),
+    path('edu/', views.edu, name='edu'),
+
    # path('email/', views.email, name='email'),
 
 

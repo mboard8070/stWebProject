@@ -27,12 +27,18 @@ def ksjof(request):
 def sftc(request):
     return render(request, "sftc.html", {})
 
+
+def edu(request):
+    return render(request, "education.html", {})
+
+
 def contact(request):
     return  render(request, "contact.html")
 
 
 def messagecomplete(request):
     return render(request, "messagecomplete.html", {})
+
 
 # django email code
 #def email(request):
